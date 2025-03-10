@@ -1,0 +1,15 @@
+EXECUTION STEPS :
+
+npm create vite@latest weather-tracker --template react
+cd weather-tracker
+npm install
+npm install react-router-dom axios firebase
+npm install @mui/material @emotion/react @emotion/styled
+npm install axios
+mkdir weather-tracking-backend && cd weather-tracking-backend
+python3 -m venv venv
+source venv/bin/activate  # On Windows use venv\Scripts\activate
+pip install fastapi uvicorn requests python-dotenv firebase-admin
+
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload    : FOR RUNNING MAIN SERVER (BACKEND)
+
